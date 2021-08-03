@@ -1,5 +1,46 @@
+:root{
+	--light: #fff;
+	--dark: #111;
+	--accent: #09ed4a;
+}
+
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--accent);
+}
+
+.logo{
+	font-family: 'Wallpoet', cursive;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 4rem;
+	color: var(--light);
+	padding-left: 30px ;
+}
+
+.nav{
+	display: flex;
+	list-style: none;
+	padding-right: 30px;
+}
+
+.nav li a{
+	text-decoration: none;
+	color: var(--light);
+	font-size: 1.5rem;
+	padding: 30px;
+	transition: 0.5s;
+}
+
+.nav li a:hover{
+	color: var(--dark);
+	letter-spacing: 2px;
 }
