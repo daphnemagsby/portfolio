@@ -2,6 +2,7 @@
 	--light: #fff;
 	--dark: #111;
 	--accent: #09ed4a;
+	--accentdark: #1c1d25;
 }
 
 *{
@@ -15,8 +16,12 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: var(--accent);
-	position: relative;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+	z-index: 1000;
 }
 
 .logo{
@@ -63,6 +68,46 @@ header{
 	border-radius: 10px;
 }
 
+.home{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--accent);
+	min-height: 100vh;
+}
+
+.home .home-text{
+	text-align: center;
+}
+
+.home .home-text h1{
+	font-size: 5rem;
+	color: #fff;
+}
+
+.home .home-text p{
+	font-size: 1.4rem;
+	color: #fff;
+}
+
+.button{
+	font-size: 1rem;
+	color: var(--light);
+	background: var(--accentdark);
+	display: inline-block;
+	padding: 10px 30px;
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	border-radius: 5px;
+}
+
+.button:hover{
+	letter-spacing: 6px;
+}
+
 
 @media (max-width: 768px){
 	header{
@@ -91,7 +136,7 @@ header{
 	}
 
 	.nav li:hover{
-		color: var(--dark);
+		color: var(--accentdark);
 		letter-spacing: 2px;
 	}
 
@@ -109,5 +154,19 @@ header{
 
 	.hamburger.is-active .bar:nth-child(3){
 		transform: translateY(-10px) rotate(-45deg);
+	}
+}
+
+@media (max-width:  375px){
+	.logo{
+		padding-left: 10px;
+	}
+
+	.hamburger{
+		right: 20px;
+	}
+
+	.home .home-text h1{
+		font-size: 3rem;
 	}
 }
