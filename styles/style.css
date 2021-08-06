@@ -24,6 +24,10 @@ header{
 	z-index: 1000;
 }
 
+section{
+	min-height: 100vh;
+}
+
 .logo{
 	font-family: 'Wallpoet', cursive;
 	text-decoration: none;
@@ -73,7 +77,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	background-color: var(--accent);
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 	/*padding-left: 30px;*/
 }
 
@@ -115,7 +119,7 @@ header{
 	justify-content: space-between;
 	align-items: baseline;
 	flex-wrap: wrap;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 }
 
 .about h2{
@@ -149,6 +153,57 @@ header{
 	text-transform: uppercase;
 	letter-spacing: 2px;
 }
+
+.projects h2{
+	font-size: 3rem;
+	letter-spacing: 1.5px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.project-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.project-card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 15px;
+	text-align: center;
+	width: 375px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	transition: 0.3s;
+}
+
+.project-card:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+}
+
+.project-image{
+	width: 375px;
+	object-fit: cover;
+}
+
+.title{
+	font-size: 1.7rem;
+	margin-bottom: 10px;
+}
+
+.subtext{
+	font-size: 1.2rem;
+}
+
+.view{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+
 
 @media (max-width: 768px){
 	header{
@@ -219,4 +274,13 @@ header{
 	.skill{
 		font-size: 1rem;
 	}
+
+	.project-card{
+		width: 250px;
+	}
+
+	.project-image{
+		width: 250px;
+	}
+
 }
