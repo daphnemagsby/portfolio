@@ -72,6 +72,32 @@ section{
 	border-radius: 10px;
 }
 
+header.sticky{
+	background-color: var(--light);
+	box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header.sticky .logo{
+	color: var(--dark);
+}
+
+header.sticky .nav{
+	background-color: var(--light);
+}
+
+header.sticky .nav li a{
+	color: var(--dark);
+}
+
+header.sticky .nav li a:hover{
+	color: var(--accentlight);
+	letter-spacing: 1px;
+}
+
+header.sticky .hamburger .bar{
+	background-color: var(--dark);
+}
+
 .home{
 	display: flex;
 	justify-content: center;
@@ -119,6 +145,7 @@ section{
 	justify-content: space-between;
 	align-items: baseline;
 	flex-wrap: wrap;
+	border-bottom: 1px solid rgba(35,37,47,0.1);
 	/*min-height: 100vh;*/
 }
 
@@ -173,7 +200,7 @@ section{
 	align-items: center;
 	margin: 15px;
 	text-align: center;
-	width: 375px;
+	width: 300px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 	transition: 0.3s;
 }
@@ -183,7 +210,7 @@ section{
 }
 
 .project-image{
-	width: 375px;
+	width: 300px;
 	object-fit: cover;
 }
 
@@ -203,15 +230,84 @@ section{
 	margin-bottom: 20px;
 }
 
+.contact{
+	border-top: 1px solid rgba(35,37,47,0.1);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+
+
+.contactForm{
+	padding: 25px 50px 75px 50px;
+	background: #fff;
+	box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+	max-width: 500px;
+	margin: 50px auto;
+	width: 50%;
+}
+
+.contactForm h3{
+	color: #111;
+	font-size: 1.2em;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.contactForm .inputBox{
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.contactForm .inputBox input, 
+.contactForm .inputBox textarea
+{
+	width: 100%;
+	border: 1px solid #555;
+	padding: 10px;
+	color: #111;
+	outline: none;
+	font-size: 16px;
+	font-weight: 300;
+	resize: none;
+}
+
+.contactForm .inputBox input[type="submit"]{
+	font-size: 1em;
+	color: #fff;
+	background: #f60d8f;
+	display: inline-block;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	max-width: 100px;
+	font-weight: 500;
+	border: none;
+	cursor: pointer;
+}
+
+
 
 
 footer{
 	background-color: var(--accent);
+	color: var(--light);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	height: 200px;
+}
+
+footer a{
+	color: var(--light);
+	text-decoration: none;
 }
 
 @media (max-width: 768px){
