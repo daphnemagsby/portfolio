@@ -232,69 +232,73 @@ header.sticky .hamburger .bar{
 }
 
 .contact{
-	border-top: 1px solid rgba(35,37,47,0.1);
+		border-top: 1px solid rgba(35,37,47,0.1);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+}
+
+.contact h2{
+	font-size: 3rem;
+	letter-spacing: 1.5px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.contact-form{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	flex-wrap: wrap;
 	align-items: center;
-
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+	max-width: 700px;
+	width: 90%;
+	margin: 20px;
 }
 
-
-
-
-.contactForm{
-	padding: 25px 50px 75px 50px;
-	background: #fff;
-	box-shadow: 0 15px 50px rgba(0,0,0,0.1);
-	max-width: 500px;
-	margin: 50px auto;
-	width: 50%;
+.contact-form:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
 
-.contactForm h3{
-	color: #111;
-	font-size: 1.2em;
-	margin-bottom: 20px;
-	font-weight: 500;
+.contact-form h3{
+	font-size: 1rem;
+	font-weight: 400;
+	margin-top: 10px;	
+	text-align: center;
 }
 
-.contactForm .inputBox{
-	position: relative;
-	width: 100%;
-	margin-bottom: 20px;
+.input{
+	width: 90%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 10px;
+  resize: vertical;
 }
 
-.contactForm .inputBox input, 
-.contactForm .inputBox textarea
-{
-	width: 100%;
-	border: 1px solid #555;
-	padding: 10px;
-	color: #111;
-	outline: none;
-	font-size: 16px;
-	font-weight: 300;
-	resize: none;
+input[type=text]{
+	margin-top: 20px;
 }
 
-.contactForm .inputBox input[type="submit"]{
-	font-size: 1em;
-	color: #fff;
-	background: #f60d8f;
-	display: inline-block;
+input[type=submit]{
+	font-size: 1rem; 
+	color: white;
+  background-color: var(--accentlight);
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 	text-transform: uppercase;
-	text-decoration: none;
-	letter-spacing: 2px;
-	transition: 0.5s;
-	max-width: 100px;
-	font-weight: 500;
-	border: none;
-	cursor: pointer;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  border-radius: 5px; 
 }
 
-
-
+input[type=submit]:hover{
+  letter-spacing: 6px;
+}
 
 footer{
 	background-color: var(--accent);
