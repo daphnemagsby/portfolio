@@ -41,6 +41,7 @@ section{
 	display: flex;
 	list-style: none;
 	padding-right: 30px;
+	transition: 0.5s;
 }
 
 .nav li a{
