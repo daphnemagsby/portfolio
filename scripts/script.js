@@ -7,6 +7,12 @@ toggleButton.addEventListener('click', function(){
   navLinks.classList.toggle('active');
 });
 
+//close the nav after clicking
+navLinks.addEventListener('click', function(){
+  toggleButton.classList.toggle('is-active');
+  navLinks.classList.toggle('active');
+});
+
 //sticky header when srolling
 window.addEventListener('scroll', function(){
   const header = document.querySelector('header');
